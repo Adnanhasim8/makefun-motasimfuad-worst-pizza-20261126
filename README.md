@@ -4,20 +4,21 @@
 
 # The Worst Pizza Topping
 
-Entry for the make.fun competition `u-motasimfuad-the-worst-pizza-topping-062c6893`: the worst pizza topping, pitched in one funny line.
+Entry for the make.fun competition `u-motasimfuad-the-worst-pizza-topping-062c6893`: one funny line pitching the worst pizza topping we could invent.
 
-The program writes a single line to `/output/entry.txt` — a raisin pizza, sold as grapes that gave up halfway.
+> Raisin pizza: grapes that gave up halfway.
+
+The program writes that single line (42 characters) to `/output/entry.txt` as UTF-8 text, after asserting it is exactly one line of 1–200 characters. Python 3.13 standard library only, no network at run time.
 
 ## Run
 
 ```sh
 python3 main.py
+cat /output/entry.txt
 ```
 
-This writes the entry to `/output/entry.txt`. To write to a different directory instead, set `MAKEFUN_OUTPUT_DIR`:
+To write to a different directory instead of `/output`:
 
 ```sh
-MAKEFUN_OUTPUT_DIR=/tmp/out python3 main.py
+MAKEFUN_OUTPUT_DIR=/tmp/worst-pizza-out python3 main.py
 ```
-
-Python 3.13 standard library only; no network at run time.
